@@ -1,15 +1,13 @@
 @font-face {
-  font-family: "Pretendard";
-  src: url("../statics/fonts/Pretendard/Pretendard-regular.woff") format("woff"),
-    url("../statics/fonts/Pretendard/Pretendard-regular.ttf") format("truetype");
+  font-family: "Semi-Bold-Pretendard";
+  src: url("../statics/fonts/Pretendard/SemiBold.woff") format("woff"),
+    url("../statics/fonts/Pretendard/SemiBold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Semi-Bold-Pretendard";
-  src: url("../statics/fonts/Pretendard/Pretendard-SemiBold.woff")
-      format("woff"),
-    url("../statics/fonts/Pretendard/Pretendard-SemiBold.ttf")
-      format("truetype");
+  font-family: "Pretendard";
+  src: url("../statics/fonts/Pretendard/Regular.woff") format("woff"),
+    url("../statics/fonts/Pretendard/Regular.ttf") format("truetype");
 }
 
 /* 색 변수 모음 */
