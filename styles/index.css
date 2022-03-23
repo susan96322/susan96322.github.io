@@ -13,17 +13,70 @@
 /* 색 변수 모음 */
 
 :root {
-  --header-bg: #ffffff;
-  --top-banner-font: #ffffff;
+  /* 전체 배경 */
+  --body-bg: #ffffff;
+
+  /* 상단 바 */
+  --header-bg: var(--body-bg);
+  --header-font: #000000;
+
+  /* 상단 배너 */
+  --top-banner-bg: var(--body-bg);
   --top-banner-bg: #000000;
+  --top-banner-font: #ffffff;
+
+  /* 빅 버튼 */
   --cta-button-bg: #01c0e2;
   --cta-button-font: #ffffff;
-  --semi-bold-color: #737373;
+
+  /* 상단 배너 버튼 */
+  --cta-banner-button-bg: var(--cta-button-bg);
+  --cta-banner-button-font: var(--cta-button-font);
+  /* 하단 빅버튼 */
+  --cta-footer-button-bg: var(--cta-button-bg);
+  --cta-footer-button-font: var(--cta-button-font);
+
+  /* 전체 구역 색상 */
+  --section-title-bg: var(--body-bg);
+  --section-title-font: #000000;
+  --section-card-bg: var(--body-bg);
+  --section-card-title-font: #000000;
+  --section-card-subtitle-font: #737373;
+  
+  /* Service */
+  --service-title-bg: var(--section-title-bg);
+  --service-title-font: var(--section-title-font);
+  --service-card-bg: var(--section-card-bg);
+  --service-card-title-font: var(--section-card-title-font);
+  --service-card-subtitle-font: var(--section-card-subtitle-font);
+
+  /* Product */
+  --product-title-bg: var(--section-title-bg);
+  --product-title-font: var(--section-title-font);
+  --product-card-bg: var(--section-card-bg);
+  --product-card-title-font: var(--section-card-title-font);
+  --product-card-subtitle-font: var(--section-card-subtitle-font);
+  /* Product Tag */
   --tag-bg: #f5f5f5;
+  --tag-font: #737373;
+  
+  /* Team */
+  --team-title-bg: var(--section-title-bg);
+  --team-title-font: var(--section-title-font);
+  --team-card-bg: var(--section-card-bg);
+  --team-card-title-font: var(--section-card-title-font);
+  --team-card-subtitle-font: var(--section-card-subtitle-font);
+
+  /* 하단 경계선 색상 */
   --footer-border-top: #d4d4d4;
+  /* 하단 바 */
+  --footer-bg: var(--body-bg);
+  --footer-font-main: #000000;
+  --footer-font-sub: #737373;
 }
 
 body {
+  background-color: var(--body-bg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,21 +87,37 @@ main {
 }
 
 header {
-  width: 1024px;
+  /* width: 1024px; */
+  width: 100%;
   height: 64px;
+  padding-left: 5%;
+  padding-right: 5%;
   display: flex;
   position: sticky;
   top: 0px;
   z-index: 100;
+  color: var(--header-font);
   background-color: var(--header-bg);
 }
 
-footer {
+/* original */
+/* footer {
   margin-top: 172px;
   padding: 32px 24px 24px 24px;
   border-top: 1px solid var(--footer-border-top);
   width: 1024px;
+} */
+
+/* new */
+footer {
+  width: 84%;
+  margin-top: 172px;
+  padding: 32px 0px 24px 0px;
+  border-top: 1px solid var(--footer-border-top);
+  background-color: var(--footer-bg);
+  color: var(--footer-font-main);
 }
+
 
 a {
   text-decoration: none;
@@ -120,8 +189,8 @@ nav {
 
 .top-banner__cta-button {
   margin-top: 67px;
-  background: var(--cta-button-bg);
-  color: var(--cta-button-font);
+  background: var(--cta-banner-button-bg);
+  color: var(--cta-banner-button-font);
   width: 310px;
   height: 67px;
   font-size: 20px;
@@ -138,6 +207,68 @@ nav {
 
 .container {
   margin: 75px 24px 0px 24px;
+}
+
+#service-section > .section-title {
+  background-color: var(--service-title-bg);
+  color: var(--service-title-font);
+}
+
+#service-section > .grid-3fr > .card__ {
+  background-color: var(--service-card-bg);
+}
+
+#service-section > .grid-3fr > .card__ > .card__title {
+  color: var(--service-card-title-font);
+}
+
+#service-section > .grid-3fr > .card__ > .card__subtitle {
+  color: var(--service-card-subtitle-font);
+}
+
+#product-section > .section-title {
+  background-color: var(--product-title-bg);
+  color: var(--product-title-font);
+}
+
+#product-section > .grid-3fr > .card__ {
+  background-color: var(--product-card-bg);
+}
+
+#product-section > .grid-3fr > .card__ > .card__title {
+  color: var(--product-card-title-font);
+}
+
+#product-section > .grid-3fr > .card__ > .card__subtitle {
+  color: var(--product-card-subtitle-font);
+}
+
+#product-section > .grid-3fr > .card__ > .card__tag {
+  color: var(--product-card-tag-font);
+  background-color: var(--product-card-tag-bg);
+}
+
+
+#team-section > .section-title {
+  background-color: var(--team-title-bg);
+  color: var(--team-title-font);
+}
+
+#team-section > .grid-4fr > .card__ {
+  background-color: var(--team-card-bg);
+}
+
+#team-section > .grid-4fr > .card__ > .card__title {
+  color: var(--team-card-title-font);
+}
+
+#team-section > .grid-4fr > .card__ > .card__subtitle {
+  color: var(--team-card-subtitle-font);
+}
+
+#team-section > .grid-4fr > .card__ > .card__tag {
+  color: var(--team-card-tag-font);
+  background-color: var(--team-card-tag-bg);
 }
 
 .section-title__main {
@@ -191,7 +322,7 @@ nav {
   font-weight: 600;
   size: 14px;
   line-height: 21px;
-  color: var(--semi-bold-color);
+  color: var(--tag-font);
   background: var(--tag-bg);
   width: fit-content;
   height: 29px;
@@ -215,11 +346,11 @@ nav {
 }
 
 .cta-button {
-  background-color: var(--cta-button-bg);
+  background-color: var(--cta-footer-button-bg);
   height: 100%;
   font-size: 20px;
   line-height: 30px;
-  color: var(--cta-button-font);
+  color: var(--cta-footer-button-font);
   border-radius: 6px;
 }
 
@@ -230,7 +361,9 @@ nav {
   width: 50%;
 }
 .footer__top__info {
+  width: 50%;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .footer__top__info__external-link {
@@ -272,10 +405,10 @@ nav {
   display: flex;
   height: 18px;
   margin-bottom: 8px;
+  color: var(--footer-font-sub);
 }
 
 .semi-bold {
-  color: var(--semi-bold-color);
   font-family: "Semi-Bold-Pretendard";
 }
 
