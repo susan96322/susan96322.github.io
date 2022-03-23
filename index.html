@@ -10,9 +10,14 @@
     <title>start up school landing page</title>
     <script>
       function colorSvgIcons(){
-        let color = getComputedStyle(document.documentElement).getPropertyValue("--footer-font-main");
+        let colorIcon = getComputedStyle(document.documentElement).getPropertyValue("--footer-font-main");
         document.querySelectorAll(".external-link__icon > svg > path").forEach((pathBody) => 
-            pathBody.setAttribute("fill", color)
+            pathBody.setAttribute("fill", colorIcon)
+        );
+
+        let colorSymbol = getComputedStyle(document.documentElement).getPropertyValue("--footer-font-sub");
+        document.querySelectorAll(".svg-symbol").forEach((pathBody) => 
+            pathBody.setAttribute("fill", colorSymbol)
         );
       }
     </script>
@@ -365,9 +370,9 @@
                     viewBox="0 0 2 16" 
                     fill="none" 
                     xmlns="http://www.w3.org/2000/svg"
-                    class="line3-image"
+                    class="line3-image svg-symbol"
                     >
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.16198 16L0.161981 -4.37114e-08L1.16504 0L1.16504 16L0.16198 16Z" fill="#D4D4D4"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.16198 16L0.161981 -4.37114e-08L1.16504 0L1.16504 16L0.16198 16Z"/>
                   </svg>
                     
                   <!-- <img
@@ -384,9 +389,9 @@
                     viewBox="0 0 2 16" 
                     fill="none" 
                     xmlns="http://www.w3.org/2000/svg"
-                    class="line3-image"
+                    class="line3-image svg-symbol"
                     >
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.16198 16L0.161981 -4.37114e-08L1.16504 0L1.16504 16L0.16198 16Z" fill="#D4D4D4"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.16198 16L0.161981 -4.37114e-08L1.16504 0L1.16504 16L0.16198 16Z" />
                   </svg>
                   <!-- <img
                     class="line3-image"
@@ -401,13 +406,13 @@
         <div class="footer__bottom">
           <div class="footer-text-wrapper semi-bold">
             이용약관
-            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg" class="ellipse-image">
-            <circle cx="2" cy="2" r="2" fill="#737373"/>
+            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg" class="ellipse-image svg-symbol">
+            <circle cx="2" cy="2" r="2"/>
             </svg>
             <!-- <img class="ellipse-image" src="./statics/images/Ellipse.png" /> -->
             개인정보처리방침
-            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg" class="ellipse-image">
-            <circle cx="2" cy="2" r="2" fill="#737373"/>
+            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg" class="ellipse-image svg-symbol">
+            <circle cx="2" cy="2" r="2"/>
             </svg>
             <!-- <img class="ellipse-image" src="./statics/images/Ellipse.png" /> -->
             환불규정
@@ -415,13 +420,13 @@
           <div class="footer-text-wrapper semi-bold">
             팀이름
             <!-- <img class="seperator-image" src="./statics/images/Seperator.png" /> -->
-            <svg width="1" height="10" viewBox="0 0 1 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="seperator-image">
-            <path d="M1 0H0V10H1V0Z" fill="#737373"/>
+            <svg width="1" height="10" viewBox="0 0 1 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="seperator-image svg-symbol">
+            <path d="M1 0H0V10H1V0Z"/>
             </svg>              
             대표자 이름
             <!-- <img class="seperator-image" src="./statics/images/Seperator.png" /> -->
-            <svg width="1" height="10" viewBox="0 0 1 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="seperator-image">
-            <path d="M1 0H0V10H1V0Z" fill="#737373"/>
+            <svg width="1" height="10" viewBox="0 0 1 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="seperator-image svg-symbol">
+            <path d="M1 0H0V10H1V0Z"/>
             </svg>              
             대표이메일
           </div>
