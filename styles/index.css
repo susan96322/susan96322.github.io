@@ -27,6 +27,7 @@
 
   /* 빅 버튼 */
   --cta-button-bg: #01c0e2;
+  /* 아래 cta버튼 신청 폰트 색상 */
   --cta-button-font: #ffffff;
 
   /* 상단 배너 버튼 */
@@ -80,6 +81,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--body-bg);
+  color: var(--body-font);
 }
 
 main {
@@ -198,7 +201,7 @@ nav {
 }
 
 .top-banner__image {
-  width: 400;
+  width: 400px;
   height: 400px;
   object-fit: cover;
 }
@@ -334,8 +337,10 @@ nav {
 
 .promotion-banner-image {
   width: 100%;
-  height: 100%;
   object-fit: cover;
+  height: 100%;
+  max-height: 250px;
+  border-radius: 6px;
 }
 
 /* 상담 버튼 */
