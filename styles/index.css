@@ -13,13 +13,32 @@
 /* 색 변수 모음 */
 
 :root {
-  --header-bg: #ffffff;
+  --body-bg: #ffffff;
+  --body-font: #000000;
+
+  /* 헤더 배경 색상*/
+  --header-bg: var(--body-bg);
+  /* 탑 배너 폰트 색상 */
   --top-banner-font: #ffffff;
+  /* 탑 배너 배경색상 */
   --top-banner-bg: #000000;
+  /* 탑 배너 버튼 색상 */
+  --top-banner-button-bg: #01c0e2;
+  /* 탑 배너 버튼 폰트 */
+  --top-banner-button-font: #ffffff;
+
+  /* 아래 cta버튼 신청 버튼 색상 */
   --cta-button-bg: #01c0e2;
+  /* 아래 cta버튼 신청 폰트 색상 */
   --cta-button-font: #ffffff;
-  --semi-bold-color: #737373;
+
+  /* 태그 폰트 색상 */
+  --tag-font: #737373;
+  /* 태그 배경색 */
   --tag-bg: #f5f5f5;
+
+  /* 푸터 색상 */
+  --semi-bold-color: #737373;
   --footer-border-top: #d4d4d4;
 }
 
@@ -27,6 +46,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--body-bg);
+  color: var(--body-font);
 }
 
 main {
@@ -120,8 +141,8 @@ nav {
 
 .top-banner__cta-button {
   margin-top: 67px;
-  background: var(--cta-button-bg);
-  color: var(--cta-button-font);
+  background: var(--top-banner-button-bg);
+  color: var(--top-banner-button-font);
   width: 310px;
   height: 67px;
   font-size: 20px;
@@ -191,7 +212,7 @@ nav {
   font-weight: 600;
   size: 14px;
   line-height: 21px;
-  color: var(--semi-bold-color);
+  color: var(--tag-font);
   background: var(--tag-bg);
   width: fit-content;
   height: 29px;
