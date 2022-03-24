@@ -9,16 +9,20 @@
     <!-- tab-title -->
     <title>start up school landing page</title>
     <script>
-      function colorSvgIcons(){
-        let colorIcon = getComputedStyle(document.documentElement).getPropertyValue("--footer-font-main");
-        document.querySelectorAll(".external-link__icon > svg > path").forEach((pathBody) => 
-            pathBody.setAttribute("fill", colorIcon)
-        );
+      function colorSvgIcons() {
+        let colorIcon = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue("--footer-font-main");
+        document
+          .querySelectorAll(".external-link__icon > svg > path")
+          .forEach((pathBody) => pathBody.setAttribute("fill", colorIcon));
 
-        let colorSymbol = getComputedStyle(document.documentElement).getPropertyValue("--footer-font-sub");
-        document.querySelectorAll(".svg-symbol").forEach((pathBody) => 
-            pathBody.setAttribute("fill", colorSymbol)
-        );
+        let colorSymbol = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue("--footer-font-sub");
+        document
+          .querySelectorAll(".svg-symbol")
+          .forEach((pathBody) => pathBody.setAttribute("fill", colorSymbol));
       }
     </script>
   </head>
@@ -26,7 +30,8 @@
     <!-- header -->
     <header>
       <div class="header__logo center">
-        <img src="./statics/images/logo.png" />
+        <!-- 로고 이미지 -->
+        <img src="./statics/images/logo/logo.png" />
       </div>
       <nav class="center">
         <!-- header-button -->
@@ -60,11 +65,13 @@
             </div>
           </a>
         </div>
+        <!-- 배너 이미지 -->
         <img
-          src="./statics/images/origin_react_react_sns.png"
+          src="./statics/images/top-banner/origin_react_react_sns.png"
           class="top-banner__image"
         />
       </div>
+      <!-- services -->
       <section id="service-section" class="container">
         <div class="section-title">
           <h2 class="section-title__main center bold">Services</h2>
@@ -74,6 +81,7 @@
         </div>
         <div class="grid-3fr">
           <div class="card__">
+            <!-- 카드 첫번째이미지 -->
             <img
               class="card__image"
               src="./statics/images/services/img_react.png"
@@ -91,6 +99,7 @@
             </p>
           </div>
           <div class="card__">
+            <!-- 카드 두번째 이미지 -->
             <img
               class="card__image"
               src="./statics/images/services/img_company.png"
@@ -110,6 +119,7 @@
             >
           </div>
           <div class="card__">
+            <!-- 카드 세번째 이미지 -->
             <img
               class="card__image"
               src="./statics/images/services/img_review.png"
@@ -132,9 +142,10 @@
       <div class="container">
         <img
           class="promotion-banner-image"
-          src="./statics/images/promotion-banner.png"
+          src="./statics/images/promotion-banner/promotion-banner.png"
         />
       </div>
+      <!-- productions -->
       <section id="product-section" class="container">
         <div class="section-title">
           <h2 class="section-title__main center bold">Product</h2>
@@ -144,9 +155,10 @@
         </div>
         <div class="grid-3fr">
           <div class="card__">
+            <!-- 카드 첫번째 이미지 -->
             <img
               class="card__image"
-              src="./statics/images/products/img_lp 1.png"
+              src="./statics/images/product/img_lp 1.png"
             />
             <p class="card__title bold">
               <!-- 최대 길이 17자 -->
@@ -161,9 +173,10 @@
             <div class="card__tag"> 자기주도학습 </div>
           </div>
           <div class="card__">
+            <!-- 카드 두번째 이미지 -->
             <img
               class="card__image"
-              src="./statics/images/products/img_bp 1.png"
+              src="./statics/images/product/img_bp 1.png"
             />
             <p class="card__title bold">
               <!-- 최대 길이 17자 -->
@@ -182,9 +195,10 @@
             </div>
           </div>
           <div class="card__">
+            <!-- 카드 세번째 이미지 -->
             <img
               class="card__image"
-              src="./statics/images/products/img_pp 1.png"
+              src="./statics/images/product/img_pp 1.png"
             />
             <p class="card__title bold">
               <!-- 최대 길이 17자 -->
@@ -201,6 +215,7 @@
           </div>
         </div>
       </section>
+      <!-- teams -->
       <section id="team-section" class="container">
         <div class="section-title">
           <h2 class="section-title__main center bold">Team</h2>
@@ -210,9 +225,10 @@
         </div>
         <div class="grid-4fr">
           <div class="card__">
+            <!-- 카드 첫번째 이미지  -->
             <img
               class="card__image"
-              src="./statics/images/humans/unsplash_rriAI0nhcbc.png"
+              src="./statics/images/team/unsplash_rriAI0nhcbc.png"
             />
             <p class="card__title center bold">
               <!-- 최대 13자 -->
@@ -226,7 +242,7 @@
           <div class="card__">
             <img
               class="card__image"
-              src="./statics/images/humans/unsplash_WNoLnJo7tS8.png"
+              src="./statics/images/team/unsplash_WNoLnJo7tS8.png"
             />
             <p class="card__title center bold">
               <!-- 최대 13자 -->
@@ -238,9 +254,10 @@
             >
           </div>
           <div class="card__">
+            <!-- 카드 두번째 이미지  -->
             <img
               class="card__image"
-              src="./statics/images/humans/unsplash_LaK153ghdig.png"
+              src="./statics/images/team/unsplash_LaK153ghdig.png"
             />
             <p class="card__title center bold">
               <!-- 최대 13자 -->
@@ -252,9 +269,10 @@
             >
           </div>
           <div class="card__">
+            <!-- 카드 세번째 이미지  -->
             <img
               class="card__image"
-              src="./statics/images/humans/unsplash_dN67hPE5KWY.png"
+              src="./statics/images/team/unsplash_dN67hPE5KWY.png"
             />
             <p class="card__title center bold">
               <!-- 최대 13자 -->
@@ -280,7 +298,8 @@
       <div>
         <div class="footer__top">
           <div class="footer__top__logo">
-            <img src="./statics/images/logo.png"/>
+            <!-- 로고 이미지 -->
+            <img src="./statics/images/logo/logo.png" />
           </div>
           <div class="footer__top__info">
             <div class="footer__top__info__external-link">
@@ -364,17 +383,21 @@
               <div class="footer__top__info__detail">
                 <p class="footer-text-wrapper semi-bold">
                   전화상담
-                  <svg 
+                  <svg
                     width="2"
-                    height="16" 
-                    viewBox="0 0 2 16" 
-                    fill="none" 
+                    height="16"
+                    viewBox="0 0 2 16"
+                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     class="line3-image svg-symbol"
-                    >
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.16198 16L0.161981 -4.37114e-08L1.16504 0L1.16504 16L0.16198 16Z"/>
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.16198 16L0.161981 -4.37114e-08L1.16504 0L1.16504 16L0.16198 16Z"
+                    />
                   </svg>
-                    
+
                   <!-- <img
                     class="line3-image"
                     src="./statics/images/Line 3 (Stroke).png"
@@ -383,15 +406,19 @@
                 </p>
                 <p class="footer-text-wrapper semi-bold">
                   상담시간
-                  <svg 
+                  <svg
                     width="2"
-                    height="16" 
-                    viewBox="0 0 2 16" 
-                    fill="none" 
+                    height="16"
+                    viewBox="0 0 2 16"
+                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     class="line3-image svg-symbol"
-                    >
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.16198 16L0.161981 -4.37114e-08L1.16504 0L1.16504 16L0.16198 16Z" />
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.16198 16L0.161981 -4.37114e-08L1.16504 0L1.16504 16L0.16198 16Z"
+                    />
                   </svg>
                   <!-- <img
                     class="line3-image"
@@ -406,13 +433,27 @@
         <div class="footer__bottom">
           <div class="footer-text-wrapper semi-bold">
             이용약관
-            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg" class="ellipse-image svg-symbol">
-            <circle cx="2" cy="2" r="2"/>
+            <svg
+              width="4"
+              height="4"
+              viewBox="0 0 4 4"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="ellipse-image svg-symbol"
+            >
+              <circle cx="2" cy="2" r="2" />
             </svg>
             <!-- <img class="ellipse-image" src="./statics/images/Ellipse.png" /> -->
             개인정보처리방침
-            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg" class="ellipse-image svg-symbol">
-            <circle cx="2" cy="2" r="2"/>
+            <svg
+              width="4"
+              height="4"
+              viewBox="0 0 4 4"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="ellipse-image svg-symbol"
+            >
+              <circle cx="2" cy="2" r="2" />
             </svg>
             <!-- <img class="ellipse-image" src="./statics/images/Ellipse.png" /> -->
             환불규정
@@ -420,14 +461,28 @@
           <div class="footer-text-wrapper semi-bold">
             팀이름
             <!-- <img class="seperator-image" src="./statics/images/Seperator.png" /> -->
-            <svg width="1" height="10" viewBox="0 0 1 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="seperator-image svg-symbol">
-            <path d="M1 0H0V10H1V0Z"/>
-            </svg>              
+            <svg
+              width="1"
+              height="10"
+              viewBox="0 0 1 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="seperator-image svg-symbol"
+            >
+              <path d="M1 0H0V10H1V0Z" />
+            </svg>
             대표자 이름
             <!-- <img class="seperator-image" src="./statics/images/Seperator.png" /> -->
-            <svg width="1" height="10" viewBox="0 0 1 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="seperator-image svg-symbol">
-            <path d="M1 0H0V10H1V0Z"/>
-            </svg>              
+            <svg
+              width="1"
+              height="10"
+              viewBox="0 0 1 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="seperator-image svg-symbol"
+            >
+              <path d="M1 0H0V10H1V0Z" />
+            </svg>
             대표이메일
           </div>
         </div>
